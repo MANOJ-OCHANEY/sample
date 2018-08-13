@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Booking Site</title>
+	<link rel="stylesheet" href="css/register.css" type="text/css">
+</head>
+<body>
+	<div class="card container">
+		<form action="register.php" method="post">
+			<h3>Register</h3>
+			<div class="group">
+				<label for="firstName">First Name </label>
+				<input type="text" name="firstName">
+			</div>
+			
+			<div class="group">
+				<label for="lastName">Last Name </label>
+				<input type="text" name="lastName">
+			</div>
+			
+			<div class="group">
+				<label for="mobile_no">Mobile No. </label>
+				<input type="tel" name="mobile_no">
+			</div>
+			
+			<div class="group">
+				<label for="email">Email Id </label>
+				<input type="email" name="email">
+			</div>
+			
+			<div class="group">
+				<label for="dob">Date Of Birth </label>
+				<input type="date" name="dob">
+			</div>
+			
+			<div class="group">
+				<label for="age">Age </label>
+				<input type="number" min="13" max="110" name="age">
+			</div>
+			
+			<div class="group">
+				<label for="address">Address </label><br>
+				<textarea cols="90" rows="6" name="address"></textarea><br><br>
+			</div>
+			
+			<div class="group">
+				<label for="gender">Gender </label><br>
+				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+				<input type="radio" name="gender" value="other"> Other<br><br>
+			</div>
+			
+			<div class="group">
+				<label for="movieTypes">Type of movies you like the most </label>
+				<select name="movieTypes">
+					<option value="action">Action</option>
+					<option value="comedy">Comedy</option>
+					<option value="romance">Romance</option>
+					<option value="horror">Horror</option>
+				</select>
+			</div><br><br>
+			
+			<input type="submit" value="Register">
+		</form>
+	</div>
+</body>
